@@ -1,0 +1,71 @@
+:root {
+    --btn-clr: rgb(85, 113, 165);
+    --btn-clr-darker: rgb(56, 80, 124);
+    --btn-clr-dark: rgb(42, 59, 90);
+}
+* {
+    margin: 0;
+    padding: 0;
+    color: bisque;
+    border: none;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main {
+    margin-top: 10%;
+    max-width: 500px;
+    min-width: 300px;
+    width: 50%;
+    background-color: var(--btn-clr-darker);
+    border: 10px var(--btn-clr-dark) solid;
+}
+.top {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    border-bottom: 3px var(--btn-clr-darker) solid;
+    margin: 0.3rem;
+}
+.viewResult{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    padding-right: 0.5rem;
+    background-color: var(--btn-clr);
+    margin-right: 0.3rem;
+}
+
+.vrt {
+  color: rgb(150, 150, 150);
+}
+.vrb {
+  font-size: 2em;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.button,
+.delete {
+    background-color: var(--btn-clr);
+    padding: 1rem 0;
+}
+
+.button:hover,
+.delete:hover {
+    background-color: var(--btn-clr-dark);
+}
+
+.button {
+    border-radius: 10%;
+    margin: 0.3rem;
+}
+
+.delete {
+    border-radius: 10%;
+    margin-left: 0.4rem;
+}
